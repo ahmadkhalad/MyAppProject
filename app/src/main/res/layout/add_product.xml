@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    android:orientation="vertical"
+    tools:context="com.example.akhaled.myapp.AddToolActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        >
+
+        <ImageView
+            android:id="@+id/image1_tool"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:layout_margin="16dp"
+
+            android:src="@mipmap/loading_image"
+             />
+
+        <ImageView
+            android:id="@+id/image2_tool"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+
+            android:layout_margin="16dp"
+            android:src="@mipmap/loading_image" />
+
+        <ImageView
+            android:id="@+id/image3_tool"
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+
+            android:layout_margin="16dp"
+            android:src="@mipmap/loading_image" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_tool_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/colorWhite"
+                android:hint="Enter Name:"
+                android:padding="8dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/et_tool_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@color/colorWhite"
+                android:hint="Enter Price:"
+                android:padding="8dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="24dp" />
+
+            <EditText
+                android:id="@+id/et_tool_describe"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorWhite"
+                android:hint="Describe Your Tool"
+                android:padding="8dp"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorAccent"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Choose dept :"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_dept"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="choose"
+                    android:entries="@array/departments" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_ADD_Tool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:gravity="center"
+                android:text="Add_Tool"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

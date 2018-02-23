@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="departments">
+
+    <item>Cars</item>
+    <item>Electronics</item>
+    <item>furniture</item>
+    <item>Home</item>
+    <item>Phones</item>
+    <item>Others</item>
+    </string-array>
+
+</resources>
